@@ -1,0 +1,189 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(217, 19%, 35%);
+    height: 100vh;
+}
+h2, .author {
+    font-weight: 700;
+}
+.main-article {
+    color: hsl(214, 17%, 51%);
+    margin-bottom: 34px;
+}
+#article-container {
+    width: 326px;
+    height: 510px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow:  2px 10px 10px #E9ECEE;
+}
+img.article-header-image {
+    border-radius: 15px 15px 0 0;
+}
+#text-container {
+    width: 262px;
+    margin: 0 auto;
+}
+#author-date-container {
+    display: inline-block;
+    width: 262px;
+    height: 40px;
+    position: relative;
+}
+img.thumb-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+}
+.author-date-info {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    left: 60px;
+}
+.date {
+    color: hsl(212, 23%, 69%);
+}
+button.share-button-container {
+    width: 35px;
+    height: 35px;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    right: 0;
+    top:4px;
+    cursor: pointer;
+    visibility: visible;
+}
+button.share-button-container-active {
+    width: 35px;
+    height: 35px;
+    background-color: hsl(214, 17%, 51%);
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    left: 150px;
+    top: -9px;
+    cursor: pointer;
+}
+button.share-button-container img, button.share-button-container-active img {
+    margin-left: 4px;
+}
+.share-flyout-button {
+    width: 326px;
+    border-radius: 0 0 15px 15px;
+    height: 64px;
+    background-color: hsl(217, 19%, 35%);
+    left: -32px;
+    top: -5px;
+    visibility: hidden;
+    position: absolute;
+}
+.share-text {
+    text-transform: uppercase;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    letter-spacing: 3px;
+    color: hsl(212, 23%, 69%);
+}
+#social-icons-container {
+    display: flex;
+    height: 35px;
+    width: 94px;
+    margin-top: 5px;
+    position: absolute;
+    left:110px;
+    top:14px;
+}
+.facebook-icon, .twitter-icon, .pinterest-icon {
+    margin-right: 16px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    display: block;
+    margin-top: 100px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+ @media only screen and (min-width: 376px) {
+    #article-container {
+      width: 730px;
+      height: 280px;
+    }
+    img.article-header-image {
+        border-radius: 15px 0 0 15px;
+        height: 280px;
+        width: 285px;
+    }
+    #text-container {
+        width: 365px;
+        float: right;
+        margin: 10px 40px 0 0;
+    }
+    #author-date-container {
+        width: 375px;
+    }
+    img.thumb-image {
+        visibility: visible;
+    }
+    .share-button-container {
+        margin-left: 130px;
+    }
+    button.share-button-container-active {
+        left: -10px;
+        top: 78px;
+    }
+    .attribution {
+        margin-top: 30px;
+    }
+    .share-flyout-button {
+        width: 248px;
+        height: 54px;
+        border-radius: 10px;
+        left: 236px;
+        top: -90px;
+        box-shadow:  2px 10px 15px #DeDeDe;
+    }
+    .share-text {
+        text-transform: uppercase;
+        position: absolute;
+        left: 38px;
+        top: 17px;
+        letter-spacing: 3px;
+        color: hsl(212, 23%, 69%);
+    }
+    .share-flyout-button::after {
+        content: "";
+        position: absolute;
+        left:105px;
+        bottom:-30px;
+        border: 15px solid transparent;
+        border-top: 18px solid hsl(217, 19%, 35%);
+    }
+    #social-icons-container {
+        display: flex;
+        width: 92px;
+        margin: 2px 0 0 4px;
+    }
+    .facebook-icon, .twitter-icon, .pinterest-icon {
+        margin-right: 16px;
+    }
+    .twitter-icon {
+        margin-left: 2px;
+    }
+    
+  }
